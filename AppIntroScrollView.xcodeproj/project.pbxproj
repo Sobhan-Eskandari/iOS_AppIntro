@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					4058C0581DFAAB96001F9673 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 44E38FYW6J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44E38FYW6J;
 				INFOPLIST_FILE = AppIntroScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.serint.AppIntroScrollView;
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44E38FYW6J;
 				INFOPLIST_FILE = AppIntroScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.serint.AppIntroScrollView;
