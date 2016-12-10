@@ -12,6 +12,8 @@
 		4058C0621DFAAB96001F9673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4058C0601DFAAB96001F9673 /* Main.storyboard */; };
 		4058C0641DFAAB96001F9673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4058C0631DFAAB96001F9673 /* Assets.xcassets */; };
 		4058C0671DFAAB96001F9673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4058C0651DFAAB96001F9673 /* LaunchScreen.storyboard */; };
+		4058C0731DFBD2ED001F9673 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4058C0721DFBD2ED001F9673 /* IntroController.swift */; };
+		4058C0751DFBD30A001F9673 /* IntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4058C0741DFBD30A001F9673 /* IntroView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4058C0631DFAAB96001F9673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4058C0661DFAAB96001F9673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4058C0681DFAAB96001F9673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4058C0721DFBD2ED001F9673 /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		4058C0741DFBD30A001F9673 /* IntroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				4058C0631DFAAB96001F9673 /* Assets.xcassets */,
 				4058C0651DFAAB96001F9673 /* LaunchScreen.storyboard */,
 				4058C0681DFAAB96001F9673 /* Info.plist */,
+				4058C0721DFBD2ED001F9673 /* IntroController.swift */,
+				4058C0741DFBD30A001F9673 /* IntroView.xib */,
 			);
 			path = AppIntroScrollView;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4058C0671DFAAB96001F9673 /* LaunchScreen.storyboard in Resources */,
+				4058C0751DFBD30A001F9673 /* IntroView.xib in Resources */,
 				4058C0641DFAAB96001F9673 /* Assets.xcassets in Resources */,
 				4058C0621DFAAB96001F9673 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4058C0731DFBD2ED001F9673 /* IntroController.swift in Sources */,
 				4058C05F1DFAAB96001F9673 /* ViewController.swift in Sources */,
 				4058C05D1DFAAB96001F9673 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +310,7 @@
 				4058C06D1DFAAB96001F9673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
