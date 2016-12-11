@@ -15,11 +15,51 @@ class ViewController: UIViewController {
     
     let imageNames = ["introtour01","introtour02","introtour03","introtour04"]
     
+    let tourData = [
+        [
+            "image" : "home",
+            "title" : "I also had the same issue.Actually, I had created an outlet connection for a text. I named it , for some reasons i later decided to change the name and I deleted the declaration from the header.",
+            ],
+        [
+            "image" : "topstores",
+            "title" : "Over 150 courses and growing",
+            ],
+        [
+            "image" : "allstores",
+            "title" : "Write actual code",
+            ],
+        [
+            "image" : "introtour04",
+            "title" : "Track your success",
+            ]
+    ]
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         scrollView.isPagingEnabled = true
         scrollView.delegate = self
-        setUpImageViews()
+        //setUpImageViews()
+        setupPageViews()
+    }
+    
+    func creatPageView(data: [String:String]) -> IntroController{
+        let introView = IntroController.loadFromNib()
+        introView.configure(data: data)
+        return introView
+    }
+    
+    func setupPageViews(){
+        var totalWidth: CGFloat = 0
+        
+        for data in tourData{
+            let introView = creatPageView(data: data)
+            introView.frame = CGRect(origin: CGPoint(x:totalWidth,y:0), size: view.bounds.size)
+            scrollView.addSubview(introView)
+            totalWidth += introView.bounds.size.width
+
+        }
+        scrollView.contentSize = CGSize(width: totalWidth, height: scrollView.bounds.size.height)
+
     }
 
     func setUpImageViews(){

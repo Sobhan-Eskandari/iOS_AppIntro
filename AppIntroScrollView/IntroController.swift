@@ -11,12 +11,17 @@ import UIKit
 class IntroController: UIView {
     @IBOutlet weak var introImage: UIImageView!
     @IBOutlet weak var introTitle: UILabel!
-    @IBOutlet weak var introText: UILabel!
 
     class func loadFromNib() -> IntroController {
         let bundle = Bundle(for: self)
-        let nib = UINib(nibName: "IntroView.xib", bundle: bundle)
+        let nib = UINib(nibName: "IntroView", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! IntroController
         return view
+    }
+    
+    func configure(data : [String:String]){
+        introTitle.text = data["title"]
+        let image = UIImage(named: data["image"]!)
+        introImage.image = image
     }
 }
